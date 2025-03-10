@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8A2BE2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6B6B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="45" fill="url(#grad1)" />
+  <circle cx="50" cy="50" r="35" fill="none" stroke="white" stroke-width="2" />
+  
+  <!-- Stars representing zodiac -->
+  <path d="M50 15 L52 21 L58 21 L53 25 L55 31 L50 27 L45 31 L47 25 L42 21 L48 21 Z" fill="white" />
+  <path d="M75 37 L77 43 L83 43 L78 47 L80 53 L75 49 L70 53 L72 47 L67 43 L73 43 Z" fill="white" />
+  <path d="M25 37 L27 43 L33 43 L28 47 L30 53 L25 49 L20 53 L22 47 L17 43 L23 43 Z" fill="white" />
+  <path d="M65 70 L67 76 L73 76 L68 80 L70 86 L65 82 L60 86 L62 80 L57 76 L63 76 Z" fill="white" />
+  <path d="M35 70 L37 76 L43 76 L38 80 L40 86 L35 82 L30 86 L32 80 L27 76 L33 76 Z" fill="white" />
+  
+  <!-- Message bubble icon in center -->
+  <circle cx="50" cy="50" r="15" fill="white" />
+  <path d="M43 47 L57 47 L57 56 L50 56 L45 60 L45 56 L43 56 Z" fill="url(#grad1)" />
+</svg>
