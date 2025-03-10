@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Button from '../components/Button';
 import Card, { CardHeader, CardTitle, CardContent } from '../components/Card';
-import Input, { FormControl, Label, TextArea } from '../components/Input';
+import Input, { FormControl, Label } from '../components/Input';
 import MessageInput from '../components/MessageInput';
 import MessageComponent from '../components/Message';
 import { useConversations } from '../contexts/ConversationContext';
-import { ZodiacSign, AstrologyInsight } from '../types/zodiac';
-import { zodiacSigns } from '../data/zodiacData';
+import { ZodiacSign } from '../types/zodiac';
 
 const PageContainer = styled.div`
   max-width: 900px;

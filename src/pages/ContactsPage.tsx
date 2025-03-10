@@ -5,7 +5,7 @@ import Card, { CardHeader, CardTitle, CardContent, CardFooter } from '../compone
 import Input, { FormControl, Label, TextArea } from '../components/Input';
 import ZodiacSignSelector from '../components/ZodiacSignSelector';
 import { useContacts } from '../contexts/ContactContext';
-import { ZodiacSign, Contact } from '../types/zodiac';
+import { ZodiacSign } from '../types/zodiac';
 import { zodiacSigns } from '../data/zodiacData';
 
 const PageContainer = styled.div`
@@ -30,10 +30,6 @@ const ContactCard = styled(Card)`
   &:hover {
     transform: translateY(-4px);
   }
-`;
-
-const AddButton = styled(Button)`
-  margin-top: ${({ theme }) => theme.space.md};
 `;
 
 const ZodiacInfo = styled.div`

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Message as MessageType, ZodiacSign } from '../types/zodiac';
+import { Message as MessageType } from '../types/zodiac';
 import { zodiacSigns } from '../data/zodiacData';
 
 interface MessageProps {

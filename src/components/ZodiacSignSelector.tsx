@@ -19,18 +19,10 @@ const Label = styled.label`
   font-weight: 500;
 `;
 
-const SignsGrid = styled.div`
+const SignGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: ${({ theme }) => theme.space.sm};
-  
-  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: ${props => props.theme.space.md};
 `;
 
 interface SignButtonProps {
@@ -96,7 +88,7 @@ const ZodiacSignSelector: React.FC<ZodiacSignSelectorProps> = ({
   return (
     <SelectorContainer>
       {label && <Label>{label}</Label>}
-      <SignsGrid>
+      <SignGrid>
         {(Object.keys(zodiacSigns) as ZodiacSign[]).map((sign) => {
           const signData = zodiacSigns[sign];
           const elementColor = getElementColor(signData.element);
@@ -114,7 +106,7 @@ const ZodiacSignSelector: React.FC<ZodiacSignSelectorProps> = ({
             </SignButton>
           );
         })}
-      </SignsGrid>
+      </SignGrid>
     </SelectorContainer>
   );
 };

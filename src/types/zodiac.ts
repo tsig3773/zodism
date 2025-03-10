@@ -1,5 +1,3 @@
-import { ElementType } from '../styles/theme';
-
 export type ZodiacSign = 
   | 'Aries' 
   | 'Taurus' 
