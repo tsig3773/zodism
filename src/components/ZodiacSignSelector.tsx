@@ -38,7 +38,7 @@ const SignButton = styled.button<SignButtonProps>`
   padding: ${({ theme }) => theme.space.md};
   border-radius: ${({ theme }) => theme.radii.md};
   border: 2px solid ${({ isSelected, elementColor, theme }) => 
-    isSelected ? elementColor : 'transparent'};
+    isSelected ? elementColor : theme.colors.border};
   background-color: ${({ theme }) => theme.colors.surface};
   cursor: pointer;
   transition: all ${({ theme }) => theme.transitions.fast};
