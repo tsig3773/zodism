@@ -11,7 +11,7 @@ import { ConversationProvider } from './contexts/ConversationContext';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
+      <GlobalStyles theme={theme} />
       <ContactProvider>
         <ConversationProvider>
           <BrowserRouter>

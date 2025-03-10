@@ -1,27 +1,21 @@
 export const theme = {
   colors: {
-    primary: '#8A2BE2', // Violet (mystical)
-    secondary: '#FF6B6B', // Coral (vibrant)
-    tertiary: '#4EA8DE', // Sky blue (calming)
-    accent: '#FFD700', // Gold (zodiac)
-    background: '#F9F9FB', // Light gray
-    surface: '#FFFFFF', // White
+    primary: '#4A90E2',
+    secondary: '#50E3C2',
+    tertiary: '#F5A623',
+    accent: '#E74C3C',
+    background: '#FFFFFF',
+    surface: '#F8F9FA',
     text: {
-      primary: '#333333', // Dark gray
-      secondary: '#666666', // Medium gray
-      light: '#FFFFFF', // White
+      primary: '#2C3E50',
+      secondary: '#7F8C8D',
+      light: '#BDC3C7',
     },
-    success: '#4CAF50', // Green
-    error: '#F44336', // Red
-    warning: '#FFC107', // Amber
-    info: '#2196F3', // Blue
-    // Zodiac element colors
-    elements: {
-      fire: '#FF5722', // Fire signs (Aries, Leo, Sagittarius)
-      earth: '#8BC34A', // Earth signs (Taurus, Virgo, Capricorn)
-      air: '#03A9F4', // Air signs (Gemini, Libra, Aquarius)
-      water: '#673AB7', // Water signs (Cancer, Scorpio, Pisces)
-    }
+    success: '#2ECC71',
+    error: '#E74C3C',
+    warning: '#F1C40F',
+    info: '#3498DB',
+    elements: {}
   },
   fonts: {
     body: "'Poppins', sans-serif",
@@ -61,10 +55,9 @@ export const theme = {
     slow: '500ms ease',
   },
   breakpoints: {
-    sm: '640px',
-    md: '768px',
-    lg: '1024px',
-    xl: '1280px',
+    mobile: '320px',
+    tablet: '768px',
+    desktop: '1024px'
   },
 };
 
